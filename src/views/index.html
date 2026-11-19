@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7A072E">
+  <meta name="description" content="Worldcal: una selección exclusiva de vehículos de alta gama.">
+  <title>Worldcal | Automóviles excepcionales</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script src="../assets/js/script.js" defer></script>
+</head>
+<body>
+  <main>
+    <section class="hero" aria-label="Worldcal, vehículos de alta gama">
+      <div class="hero__slides" aria-hidden="true">
+        <div class="hero__slide is-active">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&amp;fit=crop&amp;w=2400&amp;q=85" alt="">
+        </div>
+        <div class="hero__slide">
+          <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&amp;fit=crop&amp;w=2400&amp;q=85" alt="">
+        </div>
+        <div class="hero__slide">
+          <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?auto=format&amp;fit=crop&amp;w=2400&amp;q=85" alt="">
+        </div>
+        <div class="hero__slide">
+          <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&amp;fit=crop&amp;w=2400&amp;q=85" alt="">
+        </div>
+        <div class="hero__slide">
+          <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&amp;fit=crop&amp;w=2400&amp;q=85" alt="">
+        </div>
+      </div>
+
+      <div class="hero__shade"></div>
+      <header class="site-header">
+        <a class="brand" href="#" aria-label="Worldcal, inicio">
+          <span class="brand__monogram" aria-hidden="true">W</span>
+          <span class="brand__name">worldcal<span class="brand__dot">.</span></span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+          <span class="visually-hidden">Abrir menú</span>
+        </button>
+
+        <nav class="navigation" id="primary-navigation" aria-label="Navegación principal">
+          <a href="#catalogo">Catálogo</a>
+          <a href="#sedes">Sedes</a>
+          <a href="#repuestos">Repuestos</a>
+          <a href="#testimonios">Testimonios</a>
+          <a href="#contacto">Contacto</a>
+          <a class="navigation__login" href="#login">Login <span aria-hidden="true">↗</span></a>
+        </nav>
+      </header>
+
+      <div class="hero__content">
+        <p class="eyebrow"><span class="eyebrow__rule"></span> Conduzca lo extraordinario</p>
+        <h1 id="hero-title">Elegancia<br>sin concesiones.</h1>
+        <p class="hero__description" id="hero-description">
+          Una selección excepcional para quienes encuentran belleza en cada detalle.
+        </p>
+        <a class="hero__cta" href="#catalogo">
+          Descubra nuestra colección <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <div class="hero__footer">
+        <div class="hero__coordinates" aria-hidden="true">
+          <span>Experiencias únicas</span>
+          <span class="hero__coordinates-rule"></span>
+          <span>Desde 1998</span>
+        </div>
+        <div class="carousel-controls" aria-label="Controles del carrusel">
+          <button class="carousel-controls__arrow" type="button" data-direction="-1" aria-label="Imagen anterior">←</button>
+          <div class="carousel-controls__indicators" role="group" aria-label="Elegir imagen">
+            <button class="carousel-controls__indicator is-active" type="button" aria-label="Mostrar imagen 1" aria-current="true"></button>
+            <button class="carousel-controls__indicator" type="button" aria-label="Mostrar imagen 2"></button>
+            <button class="carousel-controls__indicator" type="button" aria-label="Mostrar imagen 3"></button>
+            <button class="carousel-controls__indicator" type="button" aria-label="Mostrar imagen 4"></button>
+            <button class="carousel-controls__indicator" type="button" aria-label="Mostrar imagen 5"></button>
+          </div>
+          <span class="carousel-controls__count"><span id="current-slide">01</span> <span aria-hidden="true">/</span> 05</span>
+          <button class="carousel-controls__arrow" type="button" data-direction="1" aria-label="Imagen siguiente">→</button>
+        </div>
+      </div>
+      <span class="hero__vertical-label" aria-hidden="true">WORLDCLASS AUTOMOTIVE</span>
+    </section>
+
+    <section class="newsletter" aria-labelledby="newsletter-title">
+      <div class="newsletter__content">
+        <p class="newsletter__eyebrow"><span aria-hidden="true"></span> El mundo Worldcal</p>
+        <h2 id="newsletter-title">Lo extraordinario,<br>directo a su correo.</h2>
+        <p class="newsletter__description">
+          Reciba novedades, selecciones exclusivas y experiencias pensadas para quienes aman conducir.
+        </p>
+      </div>
+      <form class="newsletter__form" id="newsletter-form">
+        <label class="visually-hidden" for="newsletter-email">Correo electrónico</label>
+        <div class="newsletter__input-wrap">
+          <input
+            id="newsletter-email"
+            name="email"
+            type="email"
+            placeholder="Su correo electrónico"
+            autocomplete="email"
+            required
+          >
+          <button type="submit">Suscribirme <span aria-hidden="true">→</span></button>
+        </div>
+        <p class="newsletter__note">Al suscribirse, acepta recibir novedades de Worldcal.</p>
+        <p class="newsletter__status" id="newsletter-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
