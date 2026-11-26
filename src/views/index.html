@@ -111,6 +111,380 @@
         <p class="newsletter__status" id="newsletter-status" aria-live="polite"></p>
       </form>
     </section>
+
+    <section class="catalog" id="catalogo" aria-labelledby="catalog-title">
+      <div class="catalog__header">
+        <p class="catalog__eyebrow">Nuestra colección</p>
+        <h2 id="catalog-title">Encuentre su próximo destino.</h2>
+        <p>Explore una selección de vehículos excepcionales, elegidos para acompañar cada viaje.</p>
+      </div>
+
+      <form class="catalog__filters" id="catalog-filters" aria-label="Filtrar vehículos">
+        <div class="catalog__filter">
+          <label for="filter-brand">Marca</label>
+          <select id="filter-brand" name="marca">
+            <option value="">Todas las marcas</option>
+            <option value="ferrari">Ferrari</option>
+            <option value="Alfa romeo">Alfa Romeo</option>
+            <option value="mercedes-benz">Mercedes-Benz</option>
+            <option value="jaguar">Jaguar</option>
+          </select>
+        </div>
+        <div class="catalog__filter">
+          <label for="filter-model">Modelo</label>
+          <select id="filter-model" name="modelo">
+            <option value="">Todos los modelos</option>
+            <option value="911-carrera">911 Carrera</option>
+            <option value="x5">X5</option>
+            <option value="c-class">Clase C</option>
+            <option value="a6">A6</option>
+            <option value="defender">Defender</option>
+            <option value="ferrari-cayman">Ferrari Cayman</option>
+          </select>
+        </div>
+        <div class="catalog__filter">
+          <label for="filter-year">Año</label>
+          <select id="filter-year" name="ano">
+            <option value="">Todos los años</option>
+            <option value="2025">2025</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+          </select>
+        </div>
+        <div class="catalog__filter">
+          <label for="filter-condition">Condición</label>
+          <select id="filter-condition" name="condicion">
+            <option value="">Todas las condiciones</option>
+            <option value="nuevo">Nuevo</option>
+            <option value="seminuevo">Seminuevo</option>
+            <option value="usado">Usado</option>
+          </select>
+        </div>
+      </form>
+
+      <div class="catalog__grid">
+        <article class="vehicle-card" data-brand="porsche" data-model="911-carrera" data-year="2024" data-condition="seminuevo">
+          <img
+            class="vehicle-card__image"
+            src="../assets/image/catalogo/adrian-newell-6So_bn4FW_w-unsplash.jpg"
+            alt="Automóvil deportivo rojo estacionado en una carretera"
+            loading="lazy"
+          >
+          <div class="vehicle-card__details">
+            <p class="vehicle-card__eyebrow">Porsche <span>·</span> 2024</p>
+            <h3> ferrari clasico</h3>
+            <p class="vehicle-card__condition">totalmente nuevo</p>
+          </div>
+        </article>
+        <article class="vehicle-card" data-brand="bmw" data-model="x5" data-year="2023" data-condition="usado">
+          <img
+            class="vehicle-card__image"
+            src="../assets/image/catalogo/alessio-zaccaria-Fk2QbQWZmLM-unsplash.jpg"
+            alt="Frontal de un automóvil clásico naranja"
+            loading="lazy"
+          >
+          <div class="vehicle-card__details">
+            <p class="vehicle-card__eyebrow">Jaguar <span>·</span> 1992</p>
+            <h3>Jaguar</h3>
+            <p class="vehicle-card__condition">Clasico usado</p>
+          </div>
+        </article>
+        <article class="vehicle-card" data-brand="mercedes-benz" data-model="c-class" data-year="2025" data-condition="nuevo">
+          <img
+            class="vehicle-card__image"
+            src="../assets/image/catalogo/luke-oslizlo-WEww-gMUNt8-unsplash.jpg"
+            alt="Mercedes-Benz gris estacionado junto a una carretera"
+            loading="lazy"
+          >
+          <div class="vehicle-card__details">
+            <p class="vehicle-card__eyebrow">Mercedes-Benz <span>·</span> 2025</p>
+            <h3>Clase C</h3>
+            <p class="vehicle-card__condition">Nuevo</p>
+          </div>
+        </article>
+        <article class="vehicle-card" data-brand="jaguar" data-model="clásico" data-year="2022" data-condition="seminuevo">
+          <img
+            class="vehicle-card__image"
+            src="../assets/image/catalogo/mathew-antony-Rxs3WRA1SRU-unsplash.jpg"
+            alt="Emblema Jaguar sobre la carrocería roja de un automóvil"
+            loading="lazy"
+          >
+          <div class="vehicle-card__details">
+            <p class="vehicle-card__eyebrow">Audi <span>·</span> 2022</p>
+            <h3>jaguar</h3>
+            <p class="vehicle-card__condition">clasico usado</p>
+          </div>
+        </article>
+        <article class="vehicle-card" data-brand="land-rover" data-model="defender" data-year="2024" data-condition="nuevo">
+          <img
+            class="vehicle-card__image"
+            src="../assets/image/catalogo/alessio-zaccaria-Fk2QbQWZmLM-unsplash%20(1).jpg"
+            alt="Automóvil clásico naranja fotografiado de frente"
+            loading="lazy"
+          >
+          <div class="vehicle-card__details">
+            <p class="vehicle-card__eyebrow">Land Rover <span>·</span> 2024</p>
+            <h3>Defender</h3>
+            <p class="vehicle-card__condition">Nuevo</p>
+          </div>
+        </article>
+        <article class="vehicle-card" data-brand="porsche" data-model="718-cayman" data-year="2021" data-condition="usado">
+          <img
+            class="vehicle-card__image"
+            src="../assets/image/catalogo/adrian-newell-6So_bn4FW_w-unsplash.jpg"
+            alt="Vista lateral de un automóvil deportivo rojo"
+            loading="lazy"
+          >
+          <div class="vehicle-card__details">
+            <p class="vehicle-card__eyebrow">Porsche <span>·</span> 2021</p>
+            <h3>718 Cayman</h3>
+            <p class="vehicle-card__condition">Usado</p>
+          </div>
+        </article>
+      </div>
+      <p class="catalog__empty" id="catalog-empty" aria-live="polite" hidden>No se encontraron vehículos con esos filtros.</p>
+    </section>
+
+    <section class="testimonios" id="testimonios" aria-labelledby="testimonios-title">
+      <div class="testimonios__header">
+        <div>
+          <p class="testimonios__eyebrow">Experiencias Worldcal</p>
+          <h2 id="testimonios-title">Lo cuentan quienes ya nos eligieron.</h2>
+          <p class="testimonios__note">Testimonios de ejemplo, pendientes de validación.</p>
+        </div>
+        <button
+          class="testimonios__toggle"
+          id="testimonios-toggle"
+          type="button"
+          aria-label="Pausar carrusel de testimonios"
+          aria-pressed="false"
+        ><span aria-hidden="true">Ⅱ</span> <span data-testimonios-toggle-label>Pausar</span></button>
+      </div>
+
+      <div class="testimonios__viewport" aria-label="Testimonios de clientes" aria-live="off">
+        <div class="testimonios__track">
+          <div class="testimonios__group">
+            <article class="testimonio-card">
+              <img src="../assets/image/testimonios/nueva%20carpeta%20de%20tesmimonios/Gemini_Generated_Image_igxw2oigxw2oigxw.jfif" alt="Retrato de Andrea Salazar" loading="lazy">
+              <div class="testimonio-card__content">
+                <blockquote>“La atención fue excelente y encontré el vehículo ideal para disfrutar cada viaje.”</blockquote>
+                <h3>Andrea Salazar</h3>
+              </div>
+            </article>
+            <article class="testimonio-card">
+              <img src="../assets/image/testimonios/nueva%20carpeta%20de%20tesmimonios/Gemini_Generated_Image_fjlw9jfjlw9jfjlw.jfif" alt="Retrato de Luis Mendoza" loading="lazy">
+              <div class="testimonio-card__content">
+                <blockquote>“Me acompañaron en todo el proceso con mucha claridad. La experiencia superó mis expectativas.”</blockquote>
+                <h3>Luis Mendoza</h3>
+              </div>
+            </article>
+            <article class="testimonio-card">
+              <img src="../assets/image/testimonios/nueva%20carpeta%20de%20tesmimonios/Gemini_Generated_Image_dthgzgdthgzgdthg.jfif" alt="Retrato de Valentina Rojas" loading="lazy">
+              <div class="testimonio-card__content">
+                <blockquote>“Un servicio cercano y profesional; hicieron que elegir mi próximo auto fuera muy sencillo.”</blockquote>
+                <h3>Valentina Rojas</h3>
+              </div>
+            </article>
+            <article class="testimonio-card">
+              <img src="../assets/image/testimonios/nueva%20carpeta%20de%20tesmimonios/Gemini_Generated_Image_3ycdwm3ycdwm3ycd.jfif" alt="Retrato de Carlos Herrera" loading="lazy">
+              <div class="testimonio-card__content">
+                <blockquote>“La calidad de los vehículos y la atención al detalle me dejaron muy satisfecho.”</blockquote>
+                <h3>Carlos Herrera</h3>
+              </div>
+            </article>
+            <article class="testimonio-card">
+              <img src="../assets/image/testimonios/nueva%20carpeta%20de%20tesmimonios/Gemini_Generated_Image_2o4sfo2o4sfo2o4s.jfif" alt="Retrato de Mariana Castillo" loading="lazy">
+              <div class="testimonio-card__content">
+                <blockquote>“Encontré justo lo que buscaba. El equipo respondió cada pregunta con mucha amabilidad.”</blockquote>
+                <h3>Mariana Castillo</h3>
+              </div>
+            </article>
+            <article class="testimonio-card">
+              <img src="../assets/image/testimonios/nueva%20carpeta%20de%20tesmimonios/Gemini_Generated_Image_uojaywuojaywuoja.jfif" alt="Retrato de Diego Paredes" loading="lazy">
+              <div class="testimonio-card__content">
+                <blockquote>“Una experiencia de compra cómoda, transparente y con una selección extraordinaria.”</blockquote>
+                <h3>Diego Paredes</h3>
+              </div>
+            </article>
+            <article class="testimonio-card">
+              <img src="../assets/image/testimonios/nueva%20carpeta%20de%20tesmimonios/Gemini_Generated_Image_jvwoisjvwoisjvwo.jfif" alt="Retrato de Gabriela Núñez" loading="lazy">
+              <div class="testimonio-card__content">
+                <blockquote>“Desde la primera visita me sentí en buenas manos. Recomiendo mucho su servicio.”</blockquote>
+                <h3>Gabriela Núñez</h3>
+              </div>
+            </article>
+            <article class="testimonio-card">
+              <img src="../assets/image/testimonios/nueva%20carpeta%20de%20tesmimonios/Gemini_Generated_Image_vtx41lvtx41lvtx4.jfif" alt="Retrato de Rafael Fuentes" loading="lazy">
+              <div class="testimonio-card__content">
+                <blockquote>“La asesoría fue impecable y encontré una opción que se adapta perfectamente a mí.”</blockquote>
+                <h3>Rafael Fuentes</h3>
+              </div>
+            </article>
+            <article class="testimonio-card">
+              <img src="../assets/image/testimonios/nueva%20carpeta%20de%20tesmimonios/Gemini_Generated_Image_z4gubvz4gubvz4gu.jfif" alt="Retrato de Sofía Álvarez" loading="lazy">
+              <div class="testimonio-card__content">
+                <blockquote>“Un equipo amable y atento que hizo de esta compra un momento muy especial.”</blockquote>
+                <h3>Sofía Álvarez</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="repuestos" id="repuestos" aria-labelledby="repuestos-title">
+      <div class="repuestos__header">
+        <p class="repuestos__eyebrow">Repuestos</p>
+        <h2 id="repuestos-title">Autopartes</h2>
+      </div>
+
+      <div class="repuestos__grid">
+        <article class="repuesto-card">
+          <img src="../assets/image/repuestos%20autopartes/Gemini_Generated_Image_ogvf7qogvf7qogvf.jfif" alt="filtros para vehiculos" loading="lazy">">
+          <h3>filtros</h3>
+        </article>
+        <article class="repuesto-card">
+          <img src="../assets/image/repuestos%20autopartes/Gemini_Generated_Image_7oul7j7oul7j7oul.jfif" alt="Repuesto de caja" loading="lazy">
+          <h3>autopartes</h3>
+        </article>
+        <article class="repuesto-card">
+          <img src="../assets/image/repuestos%20autopartes/Gemini_Generated_Image_af6qudaf6qudaf6q.jfif" alt="Filtros para vehículos" loading="lazy">
+          <h3>pinturas</h3>
+        </article>
+      
+        <article class="repuesto-card">
+          <img src="../assets/image/repuestos autopartes/Gemini_Generated_Image_3qm0yf3qm0yf3qm0.jfif" alt="caja" loading="lazy">
+          <h3>caja</h3>
+        </article>
+        <article class="repuesto-card">
+          <img src="../assets/image/repuestos%20autopartes/Gemini_Generated_Image_3qm0yf3qm0yf3qm0.jfif" alt="motor para vehículos" loading="lazy">
+          <h3>Motor</h3>
+        </article>
+        <article class="repuesto-card">
+          <img src="../assets/image/repuestos%20autopartes/Gemini_Generated_Image_3xvczd3xvczd3xvc.jfif" alt="lubricantes para vehículos" loading="lazy">
+          <h3>lubricantes</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="sedes" id="sedes" aria-labelledby="sedes-title">
+      <div class="sedes__header">
+        <p class="sedes__eyebrow">Visítenos</p>
+        <h2 id="sedes-title">Nuestras sedes.</h2>
+        <p>Estamos cerca para acompañarle en su próximo viaje.</p>
+      </div>
+
+      <div class="sedes__grid">
+        <article class="sede-card">
+          <button
+            class="sede-card__map"
+            type="button"
+            data-sede-map
+            data-city="Caracas"
+            data-lat="10.489832109249223"
+            data-lon="-66.85416406191096"
+            data-address="Sambil Chacao"
+            aria-label="Ampliar mapa de la sede de Caracas"
+          >
+            <iframe title="Mapa de la sede de Caracas" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+            <span class="sede-card__map-label">Ampliar mapa <span aria-hidden="true">↗</span></span>
+          </button>
+          <div class="sede-card__details">
+            <p class="sede-card__eyebrow">Distrito Capital</p>
+            <h3>Caracas</h3>
+            <address>Sambil Chacao</address>
+            <a href="tel:+58412614996773">(0412614996773)</a>
+          </div>
+        </article>
+
+        <article class="sede-card">
+          <button
+            class="sede-card__map"
+            type="button"
+            data-sede-map
+            data-city="Barquisimeto"
+            data-lat="10.072312436464113"
+            data-lon="-69.29351454513724"
+            data-address="Sambil Barquisimeto"
+            aria-label="Ampliar mapa de la sede de Barquisimeto"
+          >
+            <iframe title="Mapa de la sede de Barquisimeto" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+            <span class="sede-card__map-label">Ampliar mapa <span aria-hidden="true">↗</span></span>
+          </button>
+          <div class="sede-card__details">
+            <p class="sede-card__eyebrow">Estado Lara</p>
+            <h3>Barquisimeto</h3>
+            <address>Sambil Barquisimeto</address>
+            <a href="tel:+58412614996773">(0412614996773)</a>
+          </div>
+        </article>
+
+        <article class="sede-card">
+          <button
+            class="sede-card__map"
+            type="button"
+            data-sede-map
+            data-city="Margarita"
+            data-lat="10.99652699422037"
+            data-lon="-63.812246944153614"
+            data-address="Sambil Margarita"
+            aria-label="Ampliar mapa de la sede de Margarita"
+          >
+            <iframe title="Mapa de la sede de Margarita" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+            <span class="sede-card__map-label">Ampliar mapa <span aria-hidden="true">↗</span></span>
+          </button>
+          <div class="sede-card__details">
+            <p class="sede-card__eyebrow">Estado Nueva Esparta</p>
+            <h3>Margarita</h3>
+            <address>Sambil Margarita</address>
+            <a href="tel:+58412614996773">(0412614996773)</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <dialog class="sede-dialog" id="sede-dialog" aria-labelledby="sede-dialog-title">
+      <div class="sede-dialog__header">
+        <div>
+          <p class="sede-dialog__eyebrow">Ubicación</p>
+          <h2 id="sede-dialog-title"></h2>
+          <p id="sede-dialog-address"></p>
+        </div>
+        <button class="sede-dialog__close" type="button" aria-label="Cerrar mapa">×</button>
+      </div>
+      <iframe id="sede-dialog-map" title="Mapa ampliado de la sede" loading="lazy"></iframe>
+    </dialog>
+
+    <section class="contact" id="contacto" aria-labelledby="contacto-title">
+      <div class="contact__content">
+        <p class="contact__eyebrow">Contacto</p>
+        <h2 id="contacto-title">Estamos para ayudarle.</h2>
+        <p>Envíenos su consulta y nos pondremos en contacto con usted.</p>
+      </div>
+
+      <form class="contact__form" id="contact-form">
+        <div class="contact__field">
+          <label for="contact-name">Nombre completo</label>
+          <input id="contact-name" name="nombre" type="text" autocomplete="name" required>
+        </div>
+        <div class="contact__field">
+          <label for="contact-email">Email</label>
+          <input id="contact-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="contact__field contact__field--full">
+          <label for="contact-subject">Asunto</label>
+          <input id="contact-subject" name="asunto" type="text" required>
+        </div>
+        <div class="contact__field contact__field--full">
+          <label for="contact-message">Mensaje</label>
+          <textarea id="contact-message" name="mensaje" rows="5" required></textarea>
+        </div>
+        <button class="contact__submit" type="submit">Enviar <span aria-hidden="true">→</span></button>
+        <p class="contact__status" id="contact-status" aria-live="polite"></p>
+      </form>
+    </section>
   </main>
 </body>
 </html>
